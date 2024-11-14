@@ -1,0 +1,56 @@
+@media screen and (max-width: 650px) {
+    .right-nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width:450px) {
+    ul a {
+        display: none;
+    }
+
+    nav .fa-bars {
+        display: initial;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:1285px){
+    .container .box h1 {
+        font-size: 150px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .container .box h1 {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .container .box h1 {
+        font-size: 50px;
+    }
+    .container .box h3{
+        font-size: 20px;
+    }
+    .container .box p{
+        font-size: 10px;
+    }
+    .container .box button{
+        padding: 8px 20px;
+        font-size: 15px;
+    }
+    
+}
+@media screen and (max-width:400px){
+    .container .box{
+        margin-bottom: 300px;
+    }
+}
+@media screen and (max-width:500px){
+    .global{
+        padding: 0;
+    }
+}
+

@@ -1,0 +1,841 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    backdrop-filter: blur(20px);
+    justify-content: space-between;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+nav h1 {
+    font-family: Calibri;
+    font-weight: 900;
+    color: crimson;
+    cursor: pointer;
+}
+
+nav .fa-bars {
+    color: black;
+    padding-right: 3rem;
+    display: none;
+}
+
+.right-nav {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+}
+
+.login {
+    padding: 8px 16px;
+    background: #f1f2f3;
+    border-radius: 50px;
+}
+
+/* asosiy o'rab turuvchi */
+
+.global {
+    padding: 0 10px;
+}
+
+/* asosiy o'rab turuvchi */
+
+/* container */
+
+.container {
+    width: 100%;
+    height: 100vh;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(194, 193, 193), #EBEBEBFF);
+}
+
+.container p {
+    font-size: 20px;
+    max-width: 1000px;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.box {
+    text-align: start;
+}
+
+.container .box h3 {
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.container .box h1 {
+    font-size: 200px;
+    background: linear-gradient(to left, rgb(242, 241, 241), rgb(241, 241, 241));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.container .box p {
+    opacity: .8;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.container a button {
+    padding: 10px 30px;
+    background: rgb(252, 1, 1);
+    border-radius: 50px;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    transition: .5s;
+    letter-spacing: .5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.container a button:hover {
+    transform: scale(105%);
+    transition: .5s;
+    opacity: 0.7;
+    letter-spacing: 1px;
+}
+
+.container .box {
+    margin: 20px;
+}
+
+/* container */
+
+/* container-2 */
+
+.container-2 {
+    border-radius: 10px;
+    width: 100%;
+    height: 58vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-2 .quti-1 {
+    width: 23%;
+    height: 93%;
+    border-radius: 20px;
+    position: relative;
+    background: linear-gradient(30deg, rgb(12, 12, 12), rgb(12, 12, 12), rgb(48, 47, 47));
+    position: static;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-2 .quti-2 {
+    width: 23%;
+    height: 93%;
+    background: #555;
+    border-radius: 20px;
+    background: linear-gradient(30deg, rgb(250, 167, 12), rgb(252, 170, 19), rgb(246, 197, 106));
+}
+
+.container-2 .quti-3 {
+    width: 50%;
+    height: 93%;
+    background: #555;
+    border-radius: 20px;
+    background: linear-gradient(20deg, rgb(222, 1, 1), rgb(252, 6, 6), rgb(246, 78, 78));
+}
+
+/* quti-1 ; quti-2- ; quti-3 */
+
+/* quti-1 */
+
+.quti-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+}
+
+.quti-1 div {
+    margin-top: 100px;
+}
+
+.quti-1 p {
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.quti-1 h3 {
+    color: white;
+    font-size: 30px;
+    opacity: 1;
+}
+
+.quti-1 h1 {
+    font-size: 50px;
+    opacity: .2;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: white;
+    font-weight: bold;
+}
+
+.quti-1 img {
+    top: 45px;
+    right: -90px;
+    width: 350px;
+    height: 100%;
+    position: absolute;
+}
+
+.quti-1 button {
+    width: 110px;
+    height: 35px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(192, 2, 2);
+    color: white;
+    transition: .5s;
+    letter-spacing: .5px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.quti-1 button:hover {
+    width: 110px;
+    height: 35px;
+    transform: scale(105%);
+    transition: .5s;
+    letter-spacing: 1px;
+    opacity: .8;
+}
+
+.container-2 .quti-2 {
+    justify-content: center;
+    align-items: center;
+}
+
+.container-2 .quti-2 img {
+    position: absolute;
+    height: 350px;
+    width: 250px;
+    top: 850px;
+    left: 500px;
+    height: 200px;
+    transform: rotate(320deg);
+}
+
+/* quti-1 */
+
+/* quti-2 */
+
+.quti-2 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: white;
+}
+
+.quti-2 div {
+    margin-top: 100px;
+}
+
+.quti-2 p {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.quti-2 h3 {
+    color: white;
+    font-size: 30px;
+    opacity: 1;
+}
+
+.quti-2 h1 {
+    font-size: 50px;
+    opacity: .2;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: white;
+    margin-right: 100px;
+}
+
+.quti-2 button {
+    width: 110px;
+    height: 35px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(250, 248, 248);
+    color: goldenrod;
+    transition: .5s;
+    letter-spacing: .5px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.quti-2 button:hover {
+    width: 110px;
+    height: 35px;
+    transform: scale(105%);
+    transition: .5s;
+    letter-spacing: 1px;
+    opacity: .8;
+}
+
+/* quti-3*/
+
+.quti-3 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.quti-3 div {
+    margin-top: 90px;
+    margin-left: 80px;
+}
+
+.quti-3 p {
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.quti-3 h3 {
+    color: white;
+    font-size: 30px;
+    opacity: 1;
+    margin-bottom: 5px;
+}
+
+.quti-3 h1 {
+    font-size: 50px;
+    opacity: .2;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.quti-3 button {
+    width: 110px;
+    height: 35px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(250, 248, 248);
+    color: rgb(251, 2, 2);
+    transition: .5s;
+    letter-spacing: .5px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.quti-3 button:hover {
+    width: 110px;
+    height: 35px;
+    transform: scale(105%);
+    transition: .5s;
+    letter-spacing: 1px;
+    opacity: .8;
+}
+.quti-3 img{
+    position: absolute;
+    top: 900px;
+    right: 70px;
+    width: 400px;
+    height: 300px;
+}
+
+/* quti-3 */
+
+/* quti-1 ; quti-2- ; quti-3 */
+
+/* container-2 */
+
+/* container-3 */
+
+.container-3 {
+    width: 100%;
+    height: 58vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-3 .box-1 {
+    width: 48%;
+    height: 92%;
+    border-radius: 20px;
+    position: relative;
+    background: linear-gradient(30deg, rgb(174, 174, 174), rgb(218, 217, 217), rgb(238, 238, 238));
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.container-3 .box-2 {
+    width: 24%;
+    height: 92%;
+    border-radius: 20px;
+    background: linear-gradient(30deg, rgb(1, 172, 78), rgb(29, 248, 127), rgb(83, 247, 157));
+}
+
+.container-3 .box-3 {
+    width: 24%;
+    height: 92%;
+    background: #555;
+    border-radius: 20px;
+    background: linear-gradient(30deg, rgba(1, 56, 172, 0.806), rgba(54, 115, 245, 0.806));
+}
+
+/* container-3 */
+
+/* quti-1 ; quti-2- ; quti-3 */
+
+/* box-1 */
+
+.box-1 div {
+    margin-left: 90px;
+}
+
+.box-1 p {
+    color: black;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.box-1 h3 {
+    color: rgb(7, 7, 7);
+    font-size: 30px;
+    opacity: 1;
+}
+
+.box-1 h1 {
+    color: rgb(236, 236, 236);
+    opacity: .8;
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.box-1 button {
+    width: 120px;
+    height: 35px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(225, 3, 3);
+    color: white;
+    transition: .5s;
+    letter-spacing: .5px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.box-1 button:hover {
+    width: 120px;
+    height: 35px;
+    transform: scale(105%);
+    transition: .5s;
+    opacity: .8;
+}
+.box-1 img{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 400px;
+    right: 0;
+}
+
+/* box-1 */
+
+/* box2 */
+
+.box-2 div {
+    margin-top: 50px;
+    margin-left: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-2 p {
+    font-size: 17px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.box-2 h3 {
+    color: white;
+    font-size: 35px;
+    opacity: 1;
+}
+
+.box-2 h1 {
+    font-size: 50px;
+    opacity: .3;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: white;
+}
+
+.box-2 button {
+    width: 120px;
+    height: 37px;
+    border-radius: 50px;
+    border: none;
+    color: springgreen;
+    background-color: rgb(250, 248, 248);
+    transition: .5s;
+    letter-spacing: .5px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.box-2 button:hover {
+    width: 120px;
+    height: 37px;
+    transform: scale(105%);
+    transition: .5s;
+    letter-spacing: 1px;
+    opacity: .8;
+}
+
+.box-2 img{
+    width: 450px;
+    height: 270px; 
+    position: absolute;
+    bottom: 0;
+    top: 1460px;
+    right: 330px;
+}
+
+/* box-2 */
+
+/* box-3 */
+
+.box-3 div {
+    margin-top: 50px;
+    margin-left: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-3 p {
+    font-size: 17px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.box-3 h3 {
+    color: white;
+    font-size: 35px;
+    opacity: 1;
+}
+
+.box-3 h1 {
+    font-size: 50px;
+    opacity: .3;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: white;
+}
+
+.box-3 button {
+    width: 120px;
+    height: 37px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(250, 248, 248);
+    color: rgba(1, 80, 251, 0.806);
+    transition: .5s;
+    letter-spacing: .5px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.box-3 button:hover {
+    width: 120px;
+    height: 37px;
+    transform: scale(105%);
+    transition: .5s;
+    letter-spacing: 1px;
+    opacity: .8;
+}
+.box-3 img{
+    width: 370px;
+    height: 300px;
+    position: absolute;
+    top: 1430px;
+    right: 0px;
+}
+
+/* box-3 */
+
+/* quti-1 ; quti-2- ; quti-3 */
+
+/* container-3 */
+
+/* marquee-icon */
+
+marquee {
+    width: 97%;
+    height: 20vh;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+marquee img {
+    width: 50px;
+    height: 50px;
+
+}
+
+.marquee-bxlar {
+    width: 100%;
+    height: 100%;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+}
+
+/* marquee-icon */
+
+/* bx-1 ; bx-2 ; bx-3 ; bx-4 */
+
+/* bx-1 */
+
+.bx-1 {
+    display: flex;
+    width: 200px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin-right: 100px;
+}
+
+.bx-1 img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.bx-1 h1 {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* bx-1 */
+
+/* bx-2 */
+.bx-2 {
+    display: flex;
+    width: 200px;
+    height: 100%;
+    margin-right: 150px; 
+}
+
+.bx-2 img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
+}
+.bx-2 h1 {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* bx-2 */
+
+/* bx-3 */
+
+.bx-3 {
+    display: flex;
+    width: 200px;
+    height: 100%;
+    margin-right: 200px;
+}
+
+.bx-3 img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.bx-3 h1 {
+    font-size: 25px;
+}
+
+/* bx-3 */
+/* bx-4 */
+.bx-4 {
+    display: flex;
+    width: 200px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+    
+}
+.bx-4 img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.bx-4 h1 {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* bx-4 */
+
+/* bx-1 ; bx-2 ; bx-3 ; bx-4 */
+
+/* footer */
+
+footer {
+    width: 97%;
+    height: 55vh;
+    background: linear-gradient(to top, rgb(222, 1, 1), rgb(252, 6, 6), rgb(246, 78, 78));
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.futr-1 {
+    width: 30%;
+    height: 55%;
+    margin-left: 50px;
+}
+
+footer img{
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: 1750px;
+    left: 250px;
+    transform: rotate(30deg);
+}
+
+.futr-1 p {
+    color: white;
+    font-size: 15px;
+}
+
+.futr-1 h1 {
+    font-size: 77px;
+    color: white;
+    font-weight: 900;
+    letter-spacing: -5px;
+}
+
+.futr-2 {
+    width: 30%;
+    height: 55%;
+    color: white;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.futr-2 h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.futr-2 p {
+    margin-bottom: 20px;
+    max-width: 370px;
+}
+
+.futr-2 button {
+    width: 120px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(252, 251, 251);
+    color: rgb(252, 4, 4);
+    transition: .5s;
+    letter-spacing: .5px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.futr-2 button:hover {
+    width: 120px;
+    height: 40px;
+    transform: scale(105%);
+    transition: .5s;
+    opacity: .8;
+}
+button{
+    position: absolute;
+    z-index: 1;
+}
+
+/* footer */
