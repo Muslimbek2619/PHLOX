@@ -838,4 +838,29 @@ button{
     z-index: 1;
 }
 
+.closed {
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    position: fixed;
+    background: #121219;
+}
+
+.closed-in {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.closed h2 {
+    color:#fff;
+    text-align: center;
+}
+
 /* footer */

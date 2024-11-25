@@ -1,3 +1,15 @@
+@media screen and (max-width: 1000px) {
+    .closed {
+        display: initial;
+    }
+}
+
+@media screen  and (max-width:1440px){
+    nav .right-i{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 650px) {
     .right-nav {
         display: none;
